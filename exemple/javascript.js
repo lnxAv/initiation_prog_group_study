@@ -1,4 +1,3 @@
-let myStuff = ['buy eggs', 'buy milk', 'buy bread'];
 let counter = 0;
 
 // Create a new list item when clicking on the "Add" button
@@ -40,9 +39,6 @@ let addItem = (ev) => {
 
     // empty the input field
     document.getElementById("myInput").value = "";
-
-    //! Ajouter une limit de TODO avec un alert()
-    //! avec de la validiter
 }
 
 // Toggle the "checked" class on a list item when clicked
@@ -52,7 +48,7 @@ let toggleChecked = (ev) => {
     //? https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
     ev.target.classList.toggle('checked')
 
-    // Equivaled to the following
+    //? Equivaled to the following
     // if (ev.target.classList.contains('checked')) {
     //     ev.target.classList.remove('checked');
     // } else {
@@ -70,7 +66,6 @@ let removeItem = (ev, id) => {
 //? SECTION EXERCISES
 // Exercise 1: Prendre tous les éléments actifs (class="checked") 
 // puis les afficher avec console.log()
-
 function showChecked() {
     // Get all the checked items
     // Loop through them
@@ -79,7 +74,6 @@ function showChecked() {
 
 // Exercise 2: Prendre tous les éléments actifs (class="checked") 
 // puis les supprimer
-
 function removeChecked() {
     // Get all the checked items
     // Loop through them
@@ -88,7 +82,6 @@ function removeChecked() {
 
 // Exercise 3: Modifier la fonction newItem pour qu'il ajoute la date de création
 // de l'élément à la fin de son texte. "- Date de création: xx/xx/xxxx"
-
 function newItemWithDate() {
     
 }
